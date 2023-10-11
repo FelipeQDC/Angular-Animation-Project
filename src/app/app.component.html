@@ -1,0 +1,33 @@
+
+<app-sidebar class="Sidebar" [opcao]="select" (MudancaSelect)="selecionar($event)" [@Sidebar]="texto"></app-sidebar>
+
+
+<div class="paginas">
+  <div *ngIf="select == 1" [@myInsertRemoveTrigger]>
+    <div id="message" [@fadeState]="estado" >
+      <img [src]="'https://angular.io/assets/images/logos/angular/logo-nav@2x.png'" >
+      <img [src]="'https://djhjvd1v9hhoj.cloudfront.net/Angular%20Hologram.gif'" alt="Angular Logo" class="logo_gif"
+      (click)="goToLink('https://www.youtube.com/watch?v=ra5qNKNc95U')">
+    </div>
+    
+    <button (click)="trocar();flutuaranimation()" [@Cor]="texto" id="botaocomeco" [ngClass]="flutuar === 'sim' ? 'flutuar' : 'inactive'"><p>{{texto}}</p></button>
+
+  </div>
+
+  <div *ngIf="select == 2" [@myInsertRemoveTrigger]>
+    
+  </div>
+
+  <div *ngIf="select == 3" [@myInsertRemoveTrigger]>
+
+  </div>
+
+  <div *ngIf="select == 4" [@myInsertRemoveTrigger]>
+
+  </div>
+
+</div>
+        
+
+
+

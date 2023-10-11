@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+.Menu button{
+    
+  display: block;
+background-color: rgba(0, 0, 0, 0);
+border: none;
+padding:30px;
+padding-left: 20px;
+margin-left: 0;
+border-radius: 0 20px 20px 0;
+transition: 300ms ease-in-out;
+cursor: grab;
+}
+p{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2vw;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    
+}
+
+button:hover{
+    transition:400ms ease-in-out;
+    transform: translateX(15%);
+    background: linear-gradient(to right, hsla(195, 78%, 54%, 0), rgba(123, 244, 123, 0.533));
+    box-shadow:  0px 0px 8px -2px #8dff8d,
+             -20px 0px 8px -2px #137c99;
+}
+.Menu:hover > button:not(:hover){
+  opacity: 0.5;
+  transition:200ms ease-in-out;
+  transform: translateX(-5%);
+}
+@media screen and (max-width: 768px) {
+  
+p{
+  font-size: 5vw;
+}
+.Menu button{
+  display: inline;
+  border-radius: 0 0 20px 20px;
+}
+button:hover{
+  transition:400ms ease-in-out;
+  transform: translateY(15%);
+  background: linear-gradient(to bottom, hsla(195, 78%, 54%, 0), rgba(123, 244, 123, 0.533));
+  box-shadow:  0px 0px 8px -2px #8dff8d,
+           -20px 0px 8px -2px #137c99;
+}
+.Menu:hover > button:not(:hover){
+opacity: 0.5;
+transition:200ms ease-in-out;
+transform: translateY(-5%);
+}
+}
+ 
+  
+  
+
+
+

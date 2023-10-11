@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+#botaocomeco{
+    width: 65rem;
+    height: 15rem;
+    border: 0;
+    border-radius: 40px;
+    background-size: 300% 100%;
+    background-image: linear-gradient(to right, #25aae1, #5ffff4, #26fff8, #8ffffb98);
+    margin: 0 auto;
+    margin-top: 5rem;
+    display: block;
+    position: relative;
+    z-index: 0;
+    box-shadow:  20px 20px 60px #4eafcf,
+    -20px -20px 60px #6aedff;
+
+    transition: all .3s ease-in-out;
+}
+
+
+#botaocomeco:hover{
+    background-position: 100% 0; 
+
+    transition: all .4s ease-in-out;
+}
+
+img{
+ margin-top: 2rem;
+ height: 4rem;
+ position: relative;
+ z-index: 1;
+ user-select: none;
+ margin-bottom: 5rem;
+}
+.logo_gif{
+    padding: 2rem;
+    height: 15rem;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    user-select: none;
+    background-image: linear-gradient(to bottom, #25aae1, #5ffff4);
+    animation: morph 2s ease-in-out infinite both alternate;
+    transition: all 1.5s ease-in-out;
+    
+}
+
+
+.logo_gif:hover{
+    box-shadow:  20px 20px 60px #51d9cf,
+    -20px -20px 60px #6dffff;
+    transition: all .4s ease-in-out;
+    user-select: none;
+}
+
+p{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 4vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-shadow:  0 2px 0 #4eafcf;
+    user-select: none; 
+}
+.Sidebar{
+    position: fixed;
+    float: left;
+    margin-top: 0;
+    z-index: 2;
+}
+
+.paginas{
+    padding-left: 50vh;
+}
+.flutuar{
+    animation: flutuar 4s ease-in-out infinite;
+}
+@keyframes flutuar{
+    0%{ transform: translatey(0px);}
+    50%{  transform: translatey(-20px)}
+    100%{ transform: translatey( 0px)}
+}
+@keyframes morph {
+    0% {border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;} 
+    100% {border-radius: 40% 60%;} 
+  }
+
+  @media screen and (max-width: 768px) {
+    #botaocomeco {
+        width: 100%; /* Ocupa toda a largura da tela */
+        height: auto; /* Altura automática para manter a proporção */
+        margin-top: 3.5rem;
+        transform: scaleX(-25vh);
+        padding: 3rem;
+    }
+
+    img {
+        margin-top: 7rem; /* Ajuste de margem superior para telas menores */
+    }
+    
+    .paginas{
+        padding-left: 11vh;
+    }
+
+    .logo_gif {
+        height: 10rem; /* Altura automática para manter a proporção */
+    }
+
+    p {
+        font-size: 6vw; /* Tamanho de fonte maior para telas menores */
+    }
+}

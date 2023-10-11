@@ -1,0 +1,85 @@
+body{
+    background: linear-gradient(0deg, rgba(0,103,138,1) 19%, rgba(41,141,175,1) 33%, rgba(92,206,244) 50%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    height: 1000px;
+}
+
+.meio{
+text-align: center;
+position: absolute;
+z-index: 1001;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+  section{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, #51c8e9 19%, #24BAE3 60%,#19A1C6);
+    overflow: hidden;
+    z-index: 0;
+    
+  }
+  section .air{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(Img/wave.png);
+    background-size: 1000px 100px;
+    z-index: 0;
+    
+  }
+  section .air.air1{
+    animation: wave 35s linear infinite;
+    z-index: 997;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+  }
+  section .air.air2{
+    animation: wave2 20s linear infinite;
+    z-index: 997;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+  }
+  section .air.air3{
+    animation: wave 35s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+  }
+  section .air.air4{
+    animation: wave2 10s linear infinite;
+    z-index: 999;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+  }
+
+  @keyframes wave{
+    0%{
+      background-position-x: 0px; 
+    }
+    100%{
+      background-position-x: 1000px; 
+    }
+  }
+  @keyframes wave2{
+    0%{
+      background-position-x: 0px; 
+    }
+    100%{
+      background-position-x: -1000px; 
+    }
+  }
