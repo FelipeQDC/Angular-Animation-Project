@@ -42,7 +42,7 @@ img{
     user-select: none;
     background-image: linear-gradient(to bottom, #25aae1, #5ffff4);
     animation: morph 2s ease-in-out infinite both alternate;
-    transition: all 1.5s ease-in-out;
+    transition: all .2s ease-in-out;
     
 }
 
@@ -70,7 +70,7 @@ p{
 }
 
 .paginas{
-    padding-left: 50vh;
+    padding-left: 25vw;
 }
 .flutuar{
     animation: flutuar 4s ease-in-out infinite;
@@ -110,3 +110,4 @@ p{
         font-size: 6vw; /* Tamanho de fonte maior para telas menores */
     }
 }
+

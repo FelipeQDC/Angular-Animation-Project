@@ -11,11 +11,31 @@
     </div>
     
     <button (click)="trocar();flutuaranimation()" [@Cor]="texto" id="botaocomeco" [ngClass]="flutuar === 'sim' ? 'flutuar' : 'inactive'"><p>{{texto}}</p></button>
+ 
 
   </div>
 
   <div *ngIf="select == 2" [@myInsertRemoveTrigger]>
-    
+    <button (click)="trocar();flutuaranimation()" [@Cor]="texto" id="botaocomeco"
+      [ngClass]="flutuar === 'sim' ? 'flutuar' : 'inactive'">
+      <p>{{texto}}</p>
+    </button>
+        <button (click)="trocar();flutuaranimation()" [@Cor]="texto" id="botaocomeco"
+          [ngClass]="flutuar === 'sim' ? 'flutuar' : 'inactive'">
+          <p>{{texto}}</p>
+        </button>
+            <button (click)="trocar();flutuaranimation()" [@Cor]="texto" id="botaocomeco"
+              [ngClass]="flutuar === 'sim' ? 'flutuar' : 'inactive'">
+              <p>{{texto}}</p>
+            </button>
+                <button (click)="trocar();flutuaranimation()" [@Cor]="texto" id="botaocomeco"
+                  [ngClass]="flutuar === 'sim' ? 'flutuar' : 'inactive'">
+                  <p>{{texto}}</p>
+                </button>
+                    <button (click)="trocar();flutuaranimation()" [@Cor]="texto" id="botaocomeco"
+                      [ngClass]="flutuar === 'sim' ? 'flutuar' : 'inactive'">
+                      <p>{{texto}}</p>
+                    </button>
   </div>
 
   <div *ngIf="select == 3" [@myInsertRemoveTrigger]>

@@ -1,11 +1,10 @@
 body{
-    background: linear-gradient(0deg, rgba(0,103,138,1) 19%, rgba(41,141,175,1) 33%, rgba(92,206,244) 50%);
+    background: linear-gradient(0deg, #023961 19%, #035894 33%, #0488e5 50%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100%;
     max-width: 100%;
     overflow-x: hidden;
-    height: 1000px;
 }
 
 .meio{
@@ -25,7 +24,6 @@ z-index: 1001;
     background: linear-gradient(0deg, #51c8e9 19%, #24BAE3 60%,#19A1C6);
     overflow: hidden;
     z-index: 0;
-    
   }
   section .air{
     position: absolute;
@@ -83,3 +81,13 @@ z-index: 1001;
       background-position-x: -1000px; 
     }
   }
+     @media (-webkit-device-pixel-ratio: 1.25) {
+       * {
+         zoom: 97%;
+       }
+  
+       section {
+         width: 100%;
+         height: 100%;
+       }
+     }
