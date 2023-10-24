@@ -44,5 +44,6 @@ export class AppComponent {
     window.open(url, "_blank");
 }
 
+
 }
-  
+

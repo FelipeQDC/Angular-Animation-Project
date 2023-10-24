@@ -18,6 +18,18 @@
     transition: all .3s ease-in-out;
 }
 
+.VRIDO{
+margin-top: 3rem;
+padding: 500%;
+text-align: center;
+/*EFEITO VIDRO*/
+background: rgba(255, 255, 255, 0.23);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.7px);
+-webkit-backdrop-filter: blur(2.7px);
+border: 1px solid rgba(255, 255, 255, 0.24);
+}
 
 #botaocomeco:hover{
     background-position: 100% 0; 

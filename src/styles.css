@@ -1,10 +1,13 @@
 body{
-    background: linear-gradient(0deg, #023961 19%, #035894 33%, #0488e5 50%);
+  --gradientStop: #0488e5;
+  --Meio: #0488e5;
+    background: linear-gradient(0deg, var(--gradientStop) 19%, var(--Meio) 37%, #0588e6 60%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100%;
     max-width: 100%;
     overflow-x: hidden;
+    transition: background-position .5s ease;
 }
 
 .meio{
