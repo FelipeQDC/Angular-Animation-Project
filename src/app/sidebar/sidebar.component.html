@@ -1,7 +1,7 @@
 <div class="Menu">
-<button (click)="opcao = 1; MudancaSelect.emit(opcao)"><p>Home</p></button>
-<button (click)="opcao = 2; MudancaSelect.emit(opcao)"><p>Sobre</p></button>
-<button (click)="opcao = 3; MudancaSelect.emit(opcao)"><p>Exemplos</p></button>
-<button (click)="opcao = 4; MudancaSelect.emit(opcao)"><p>Preços</p></button>
+<button (click)="opcao = 1; MudancaSelect.emit(opcao)"><p>Home</p><div class="Bola" *ngIf="opcao == 1"></div></button>
+<button (click)="opcao = 2; MudancaSelect.emit(opcao)"><p>Sobre</p><div class="Bola" *ngIf="opcao == 2"></div></button>
+<button (click)="opcao = 3; MudancaSelect.emit(opcao)"><p>Exemplos</p><div class="Bola" *ngIf="opcao == 3"></div></button>
+<button (click)="opcao = 4; MudancaSelect.emit(opcao)"><p>Preços</p><div class="Bola" *ngIf="opcao == 4"></div></button>
 </div>
 

@@ -11,6 +11,17 @@ margin-left: 0;
 border-radius: 0 20px 20px 0;
 transition: 300ms ease-in-out;
 }
+.Bola{
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 19% 81% 75% 25% / 0% 51% 49% 1%;
+  background-image: linear-gradient(to right, #ffffff4c , #ffffff);
+  box-shadow:  20px 20px 42px #818181,
+             -20px -20px 42px #ffffff;
+  padding: 0 0 0.3rem 0.3rem;
+  margin: 0 0 0.3rem 0.5rem;
+}
 p{
     font-family: 'Rajdhani', sans-serif;
     font-size: 2vw;
@@ -18,6 +29,7 @@ p{
     text-transform: uppercase;
     padding: 0;
     margin: 0;
+    display: inline-block;
     
 }
 
@@ -41,6 +53,10 @@ p{
 .Menu button{
   display: inline;
   border-radius: 0 0 20px 20px;
+  padding: 20px;
+}
+.Bola{
+  margin: 0.4rem 0 0rem 0.5rem;
 }
 button:hover{
   transition:400ms ease-in-out;
