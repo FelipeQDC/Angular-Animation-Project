@@ -18,7 +18,7 @@ function throttleEvent(event: any) {
   }
   EstaEscrolando = true;
 }
-
+//implementar a volta do background quando voltar pelo sidebar
 function handleScrolledPosition(event: any) {
   let scroll = window.scrollY;
 
