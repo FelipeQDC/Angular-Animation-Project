@@ -48,15 +48,20 @@ button:hover{
 @media screen and (max-width: 768px) {
   
 p{
-  font-size: 5vw;
+  font-size: 4vw;
 }
 .Menu button{
-  display: inline;
+  display: inline-flex;
   border-radius: 0 0 20px 20px;
   padding: 20px;
+  max-width: 5.5rem;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 0.4rem;
 }
 .Bola{
-  margin: 0.4rem 0 0rem 0.5rem;
+display: none;
+  
 }
 button:hover{
   transition:400ms ease-in-out;

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+.VRIDO {
+    margin-top: 3rem;
+    width: auto;
+    text-align: center;
+    /*EFEITO VIDRO*/
+    background: rgba(255, 255, 255, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.7px);
+    -webkit-backdrop-filter: blur(2.7px);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    display: flex;
+    text-wrap: balance;
+    margin-right: 22rem;
+    margin-bottom: 3rem;
+}
+.VRIDO p{
+    font-size: 2vw;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    text-shadow: 0 2px 0 #4eafcf;
+}
+.VRIDOMINI{
+            background: rgba(0, 254, 216, 0.23);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(2.7px);
+            -webkit-backdrop-filter: blur(2.7px);
+            border: 1px solid rgba(0, 254, 216, 0.23);
+            padding: 0;
+            margin: 10px;
+            font-weight: 900;
+            font-size: 2vw;
+            font-family: 'Work Sans', sans-serif;
+            display: flex;
+            align-items: center;
+            text-shadow: 0 2px 0 #4eafcf;
+}
