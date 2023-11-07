@@ -45,6 +45,7 @@ z-index: 1001;
     opacity: 1;
     animation-delay: 0s;
     bottom: 0;
+
   }
   section .air.air2{
     animation: wave2 20s linear infinite;
@@ -52,6 +53,7 @@ z-index: 1001;
     opacity: 0.5;
     animation-delay: -5s;
     bottom: 10px;
+    animation: flutuar 4s ease-in-out infinite;
   }
   section .air.air3{
     animation: wave 35s linear infinite;
@@ -59,6 +61,7 @@ z-index: 1001;
     opacity: 0.2;
     animation-delay: -2s;
     bottom: 15px;
+    animation: flutuar 4s ease-in-out infinite;
   }
   section .air.air4{
     animation: wave2 10s linear infinite;
@@ -67,7 +70,11 @@ z-index: 1001;
     animation-delay: -5s;
     bottom: 20px;
   }
-
+  @keyframes flutuar{
+    0%{ transform: translatey(0px);}
+    50%{  transform: translatey(20px)}
+    100%{ transform: translatey( 0px)}
+}
   @keyframes wave{
     0%{
       background-position-x: 0px; 
