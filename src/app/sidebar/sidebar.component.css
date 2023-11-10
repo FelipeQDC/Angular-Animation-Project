@@ -21,6 +21,7 @@ transition: 300ms ease-in-out;
              -20px -20px 42px #ffffff;
   padding: 0 0 0.3rem 0.3rem;
   margin: 0 0 0.3rem 0.5rem;
+  transform: translateY(7.5px);
 }
 p{
     font-family: 'Rajdhani', sans-serif;
@@ -59,10 +60,7 @@ p{
   justify-content: space-evenly;
   margin-left: 0.4rem;
 }
-.Bola{
-display: none;
-  
-}
+
 button:hover{
   transition:400ms ease-in-out;
   transform: translateY(15%);
