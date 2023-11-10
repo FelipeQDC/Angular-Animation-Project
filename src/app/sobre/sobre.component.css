@@ -14,9 +14,9 @@
     backdrop-filter: blur(2.7px);
     -webkit-backdrop-filter: blur(2.7px);
     border: 1px solid rgba(255, 255, 255, 0.24);
-    display: flex;
-    text-wrap: balance;
 
+    text-wrap: balance;
+    margin-right: 22rem;
     margin-bottom: 3rem;
     perspective: 60rem;
     transition: 400ms, scale 200ms;
