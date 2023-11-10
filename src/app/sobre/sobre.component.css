@@ -56,9 +56,9 @@
 @media screen and (max-width: 768px) {
     .VRIDO{
         display: block;
-        margin-right: 3rem;
+        margin-right: 2em;
         padding: 1rem;
-        margin-left: 3em;
+        margin-left: 2em;
     }
     .VRIDO p{
         font-size: 4vw;
