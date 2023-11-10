@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+#v1{
+    margin-top: 6rem;
+}
 .VRIDO {
     margin-top: 3rem;
     width: auto;
@@ -16,7 +19,7 @@
     margin-bottom: 3rem;
     perspective: 60rem;
     transition: 400ms, scale 200ms;
-    max-height: 30rem;
+    max-height: 32rem;
 }
 .VRIDO:hover{
     rotate: y 10deg;

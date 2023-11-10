@@ -18,9 +18,8 @@
     transition: all .3s ease-in-out;
 }
 
-.VRIDO{
-  
-    margin-top: 2rem;
+#VRIDO{
+    margin-top: 3rem;
 }
 #botaocomeco:hover{
     background-position: 100% 0; 
@@ -73,7 +72,7 @@ p{
 }
 
 .paginas{
-    padding-left: 25vw;
+    padding-left: 22em;
 }
 .flutuar{
     animation: flutuar 4s ease-in-out infinite;
@@ -103,7 +102,10 @@ p{
     }
     
     .paginas{
-        padding-left: 11vh;
+        padding-left: 7em;
+    }
+    #VRIDO{
+        padding-left: -13em;
     }
 
     .logo_gif {
