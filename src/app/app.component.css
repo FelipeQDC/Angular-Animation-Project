@@ -18,9 +18,6 @@
     transition: all .3s ease-in-out;
 }
 
-#VRIDO{
-    margin-top: 3rem;
-}
 #botaocomeco:hover{
     background-position: 100% 0; 
 

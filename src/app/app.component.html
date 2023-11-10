@@ -2,8 +2,8 @@
 <app-sidebar class="Sidebar" [opcao]="select" (MudancaSelect)="selecionar($event)" [@Sidebar]="texto"></app-sidebar>
 
 
-<div class="paginas">
-  <div *ngIf="select == 1" [@myInsertRemoveTrigger]>
+
+  <div *ngIf="select == 1" [@myInsertRemoveTrigger] class="paginas">
     <div id="message" [@fadeState]="estado" >
       <img [src]="'https://angular.io/assets/images/logos/angular/logo-nav@2x.png'" >
       <img [src]="'https://djhjvd1v9hhoj.cloudfront.net/Angular%20Hologram.gif'" alt="Angular Logo" class="logo_gif"
@@ -27,7 +27,7 @@
 
   </div>
 
-</div>
+
         
 
 

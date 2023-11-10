@@ -20,6 +20,7 @@
     perspective: 60rem;
     transition: 400ms, scale 200ms;
     max-height: 32rem;
+    margin-left: 22em;
 }
 .VRIDO:hover{
     rotate: y 10deg;
@@ -56,7 +57,7 @@
         display: block;
         margin-right: 7rem;
         padding: 1rem;
-
+        margin-left: 3em;
     }
     .VRIDO p{
         font-size: 4vw;
