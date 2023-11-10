@@ -2,6 +2,9 @@
 #v1{
     margin-top: 6rem;
 }
+body{
+    max-width: 100%;
+}
 .VRIDO {
     margin-top: 3rem;
     width: auto;
