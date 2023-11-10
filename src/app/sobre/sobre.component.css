@@ -2,9 +2,7 @@
 #v1{
     margin-top: 6rem;
 }
-body{
-    max-width: 100%;
-}
+
 .VRIDO {
     margin-top: 3rem;
     width: auto;
@@ -18,7 +16,7 @@ body{
     border: 1px solid rgba(255, 255, 255, 0.24);
     display: flex;
     text-wrap: balance;
-    margin-right: 22rem;
+
     margin-bottom: 3rem;
     perspective: 60rem;
     transition: 400ms, scale 200ms;
