@@ -24,7 +24,7 @@ transition: 300ms ease-in-out;
 }
 p{
     font-family: 'Rajdhani', sans-serif;
-    font-size: 2vw;
+    font-size: 1.5rem;
     font-weight: 400;
     text-transform: uppercase;
     padding: 0;
@@ -79,7 +79,7 @@ transform: translateY(-5%);
 
 @media (-webkit-device-pixel-ratio: 1.25) {
 p{
-  font-size: 3vw;
+  font-size: 1.3rem;
 }
 }
  

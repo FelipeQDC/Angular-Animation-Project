@@ -19,7 +19,8 @@
 }
 
 .VRIDO{
-    display: grid;
+  
+    margin-top: 2rem;
 }
 #botaocomeco:hover{
     background-position: 100% 0; 
@@ -58,7 +59,7 @@ img{
 
 p{
     font-family: 'Work Sans', sans-serif;
-    font-size: 4vw;
+    font-size: 3.4rem;
     font-weight: 900;
     text-transform: uppercase;
     text-shadow:  0 2px 0 #4eafcf;
@@ -89,11 +90,12 @@ p{
 
   @media screen and (max-width: 768px) {
     #botaocomeco {
-        width: 100%; /* Ocupa toda a largura da tela */
+        width: 15rem; /* Ocupa toda a largura da tela */
         height: auto; /* Altura automática para manter a proporção */
         margin-top: 3.5rem;
         transform: scaleX(-25vh);
         padding: 3rem;
+     
     }
 
     img {
@@ -109,7 +111,7 @@ p{
     }
 
     p {
-        font-size: 6vw; /* Tamanho de fonte maior para telas menores */
+        font-size: 5vw; /* Tamanho de fonte maior para telas menores */
     }
 }
 
