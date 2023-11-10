@@ -22,7 +22,7 @@ z-index: 1001;
   }
   section{
     position: absolute;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background: linear-gradient(0deg, #51c8e9 19%, #24BAE3 60%,#19A1C6);
     overflow: hidden;
