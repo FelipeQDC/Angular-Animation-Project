@@ -16,6 +16,7 @@
     margin-bottom: 3rem;
     perspective: 60rem;
     transition: 400ms, scale 200ms;
+    max-height: 30rem;
 }
 .VRIDO:hover{
     rotate: y 10deg;
