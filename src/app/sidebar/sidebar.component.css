@@ -80,7 +80,11 @@ p{
   font-size: 1.3rem;
 }
 }
- 
+@media screen and (max-width: 768px) {
+  .Bola{
+    display: none;
+  }
+}
   
   
 
