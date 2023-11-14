@@ -54,7 +54,11 @@
             align-items: center;
             text-shadow: 0 2px 0 #4eafcf;
 }
-
+@media screen and (max-width: 1200px) {
+    .VRIDO{
+        display: block;
+    }
+}
 @media screen and (max-width: 768px) {
     .VRIDO{
         display: block;

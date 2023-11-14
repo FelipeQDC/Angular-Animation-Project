@@ -3,13 +3,17 @@
 
 
 
-  <div *ngIf="select == 1" [@myInsertRemoveTrigger] class="paginas">
+  <div *ngIf="select == 1" [@myInsertRemoveTrigger] class="paginas">  
     <div id="message" [@fadeState]="estado" >
       <img [src]="'https://angular.io/assets/images/logos/angular/logo-nav@2x.png'" >
       <img [src]="'https://djhjvd1v9hhoj.cloudfront.net/Angular%20Hologram.gif'" alt="Angular Logo" class="logo_gif"
       (click)="goToLink('https://www.youtube.com/watch?v=ra5qNKNc95U')">
     </div>
-    
+    <div class="bola1"></div>
+    <div class="bola2"></div>
+    <div class="bola3"></div>
+    <div class="bola4"></div>
+
     <button (click)="trocar();flutuaranimation()" [@Cor]="texto" id="botaocomeco" [ngClass]="flutuar === 'sim' ? 'flutuar' : 'inactive'"><p>{{texto}}</p></button>
  
 
