@@ -113,7 +113,7 @@ p{
     left: 5%;
     top: 130px;
     border-radius: 50%;
-    background: linear-gradient(145deg, #2540ff, #2036e2);
+    background: linear-gradient(145deg, #253effc7, #2037e2c0);
     box-shadow:  8px 8px 16px #2139ee,
                  -8px -8px 16px #253fff;
     animation: flutuar 4.5s ease-in-out infinite alternate;
@@ -127,7 +127,7 @@ p{
     width: 3rem;
     left: 70%;
     border-radius: 50%;
-    background: linear-gradient(145deg, #ffa80b, #e68d09);
+    background: linear-gradient(145deg, #ffaa0bd5, #e68e09e0);
     box-shadow:  8px 8px 16px #f2950a,
                  -8px -8px 16px #ffa50b;
     animation: flutuar 4s ease-in-out infinite alternate;   
