@@ -17,12 +17,15 @@
 
     transition: all .3s ease-in-out;
 }
-
+.noClick{
+    user-select: none;
+}
 #botaocomeco:hover{
     background-position: 100% 0; 
 
     transition: all .4s ease-in-out;
 }
+
 
 img{
  margin-top: 2rem;
@@ -75,43 +78,67 @@ p{
     animation: flutuar 4s ease-in-out infinite;
 }
 .bola1{
-    height: 1rem;
-    width: 1rem;
-    background-color: red;
+    position: absolute;
+    top: 130px;
+    left: 86%;
+    padding: 2rem;
+    width: 3rem;
+    height: 3rem;
+    user-select: none;
     border-radius: 50%;
-    animation: morph 1s ease-in-out infinite both alternate;
+    background: linear-gradient(145deg, #ee1313aa, #c81010cd);
+    box-shadow:  8px 8px 16px #d31111af,
+                 -8px -8px 16px #e91313b9;
+    
+    animation: flutuar 5s ease-in-out infinite alternate;
 }
 .bola2{
-    height: 1rem;
-    width: 1rem;
-    background-color: rgb(13, 255, 0);
+    position: absolute;
+    left: 20%;
+    padding: 2rem;
+    height: 3rem;
+    width: 3rem;
     border-radius: 50%;
-    animation: morph 1s ease-in-out infinite both alternate;
+    background: linear-gradient(145deg, #37ff2dbd, #30e526b3);
+    box-shadow:  8px 8px 16px #32f128b1,
+                 -8px -8px 16px #37ff2cb6;
+    animation: flutuar 3s ease-in-out infinite alternate;
+    user-select: none;
 }
 .bola3{
-    height: 1rem;
-    width: 1rem;
-    background-color: rgb(0, 30, 255);
+    position: absolute;
+    padding: 2rem;
+    height: 3rem;
+    width: 3rem;
+    left: 5%;
+    top: 130px;
     border-radius: 50%;
-    animation: morph 1s ease-in-out infinite both alternate;
+    background: linear-gradient(145deg, #2540ff, #2036e2);
+    box-shadow:  8px 8px 16px #2139ee,
+                 -8px -8px 16px #253fff;
+    animation: flutuar 4.5s ease-in-out infinite alternate;
+    user-select: none;
+   
 }
 .bola4{
-    height: 1rem;
-    width: 1rem;
-    background-color: rgb(255, 153, 0);
+    position: absolute;
+    padding: 2rem;
+    height: 3rem;
+    width: 3rem;
+    left: 70%;
     border-radius: 50%;
-    animation: morph 1s ease-in-out infinite both alternate;
-    animation: Rodas 1s  35s linear;
+    background: linear-gradient(145deg, #ffa80b, #e68d09);
+    box-shadow:  8px 8px 16px #f2950a,
+                 -8px -8px 16px #ffa50b;
+    animation: flutuar 4s ease-in-out infinite alternate;   
+    user-select: none;
 }
-@keyframes Rodas{
-        from {
-            transform: rotate(0deg)
-        }
-        to {
-            transform: rotate(360deg)
-        }
-    
+
+.orbita{
+    position: relative;
+   bottom: 50%;
 }
+
 @keyframes flutuar{
     0%{ transform: translatey(0px);}
     50%{  transform: translatey(-20px)}
@@ -131,7 +158,24 @@ p{
         margin-top: 3.5rem;
         transform: scaleX(-25vh);
         padding: 3rem;
-     
+    }
+
+    .bola1{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    .bola2{
+        left: 16%;
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    .bola3{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    .bola4{
+        height: 1.5rem;
+        width: 1.5em;
     }
 
     img {
@@ -163,6 +207,29 @@ p{
      
     }
 
+    .bola1{
+        height: 1rem;
+        width: 1rem;
+        padding: 1rem;
+    }
+    .bola2{
+        left: 16%;
+        height: 1rem;
+        width: 1rem;
+        padding: 1rem;
+        bottom: 4%;
+    }
+    .bola3{
+        height: 1rem;
+        width: 1rem;
+        padding: 1rem;
+    }
+    .bola4{
+        padding: 1rem;
+        height: 1rem;
+        width: 1em;
+        bottom: 4%;
+    }
     img {
         margin-top: 7rem; /* Ajuste de margem superior para telas menores */
     }
