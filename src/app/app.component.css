@@ -212,6 +212,7 @@ p{
         width: 1rem;
         padding: 1rem;
         left: 98%;
+        z-index: 1;
     }
     .bola2{
         left: 16%;
@@ -225,6 +226,7 @@ p{
         width: 1rem;
         padding: 1rem;
         left: -16%;
+        z-index: 1;
     }
     .bola4{
         padding: 1rem;
