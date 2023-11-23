@@ -87,7 +87,7 @@ p{
     height: 3rem;
     user-select: none;
     border-radius: 50%;
-    background: linear-gradient(145deg, #ee1313aa, #c81010cd);
+    background: linear-gradient(145deg, #ee1313aa, #c81010b6);
     box-shadow:  8px 8px 16px #d31111af,
                  -8px -8px 16px #e91313b9;
     
