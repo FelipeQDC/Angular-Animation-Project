@@ -45,6 +45,7 @@ img{
     background-image: linear-gradient(to bottom, #25aae1, #5ffff4);
     animation: morph 2s ease-in-out infinite both alternate;
     transition: all .2s ease-in-out;
+    cursor: pointer;
     
 }
 
@@ -91,7 +92,7 @@ p{
                  -8px -8px 16px #e91313b9;
     
     animation: flutuar 3.2s ease-in-out infinite alternate, Brilha1 2s ease-in-out infinite alternate;
-     
+    cursor: pointer;
 }
 .bola2{
     position: absolute;
@@ -105,6 +106,7 @@ p{
                  -8px -8px 16px #37ff2cb6;
   animation: flutuar 4.8s ease-in-out infinite alternate, Brilha2 2s ease-in-out infinite alternate;
     user-select: none;
+    cursor: pointer;
 }
 .bola3{
     position: absolute;
@@ -120,6 +122,7 @@ p{
     animation: flutuar 4.3s ease-in-out infinite alternate, Brilha3 2s ease-in-out infinite alternate;
     user-select: none;
     text-align: center;
+    cursor: pointer;
    
 }
 .bola4{
@@ -134,6 +137,7 @@ p{
                  -8px -8px 16px #ffa50b;
     animation: flutuar 3.6s ease-in-out infinite alternate, Brilha4 2s ease-in-out infinite alternate;
     user-select: none;
+    cursor: pointer;
 }
 
 .orbita{
