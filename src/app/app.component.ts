@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import { fadeState, Cor, Sidebar, myInsertRemoveTrigger} from './animations';
-
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -12,6 +10,7 @@ import { fadeState, Cor, Sidebar, myInsertRemoveTrigger} from './animations';
     Sidebar,
     myInsertRemoveTrigger,
   ]
+  
 })
 
 
@@ -46,4 +45,6 @@ export class AppComponent {
 
 
 }
+
+
 

@@ -90,7 +90,8 @@ p{
     box-shadow:  8px 8px 16px #d31111af,
                  -8px -8px 16px #e91313b9;
     
-    animation: flutuar 5s ease-in-out infinite alternate;
+    animation: flutuar 3.2s ease-in-out infinite alternate, Brilha1 2s ease-in-out infinite alternate;
+     
 }
 .bola2{
     position: absolute;
@@ -102,7 +103,7 @@ p{
     background: linear-gradient(145deg, #37ff2dbd, #30e526b3);
     box-shadow:  8px 8px 16px #32f128b1,
                  -8px -8px 16px #37ff2cb6;
-    animation: flutuar 3s ease-in-out infinite alternate;
+  animation: flutuar 4.8s ease-in-out infinite alternate, Brilha2 2s ease-in-out infinite alternate;
     user-select: none;
 }
 .bola3{
@@ -116,8 +117,9 @@ p{
     background: linear-gradient(145deg, #253effc7, #2037e2c0);
     box-shadow:  8px 8px 16px #2139ee,
                  -8px -8px 16px #253fff;
-    animation: flutuar 4.5s ease-in-out infinite alternate;
+    animation: flutuar 4.3s ease-in-out infinite alternate, Brilha3 2s ease-in-out infinite alternate;
     user-select: none;
+    text-align: center;
    
 }
 .bola4{
@@ -130,13 +132,22 @@ p{
     background: linear-gradient(145deg, #ffaa0bd5, #e68e09e0);
     box-shadow:  8px 8px 16px #f2950a,
                  -8px -8px 16px #ffa50b;
-    animation: flutuar 4s ease-in-out infinite alternate;   
+    animation: flutuar 3.6s ease-in-out infinite alternate, Brilha4 2s ease-in-out infinite alternate;
     user-select: none;
 }
 
 .orbita{
     position: relative;
    bottom: 50%;
+}
+.orbita img{
+    height: 64px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translatey(-60%) translateX(-10%);
+  
 }
 
 @keyframes flutuar{
@@ -148,9 +159,32 @@ p{
     0% {border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;} 
     100% {border-radius: 40% 60%;} 
   }
-  @media (min-width: 992px) { 
-    
-   }
+@keyframes Brilha1 {
+    0%{ 
+        box-shadow:  8px 8px 16px #d31111af,
+                     -8px -8px 16px #e91313b9;}
+    100%{ 
+        box-shadow:  8px 8px 16px #d71f1ff7,
+                     -8px -8px 16px #d82e2efd;}
+}
+@keyframes Brilha2 {
+    0%{ box-shadow:  8px 8px 16px #32f128b1,
+        -8px -8px 16px #37ff2cb6;}
+    100%{ box-shadow:  8px 8px 16px #44d43c,
+        -8px -8px 16px #46df3e;}
+}
+@keyframes Brilha3 {
+    0%{ box-shadow:  8px 8px 16px #2139eebb,
+        -8px -8px 16px #253effd5;}
+    100%{ box-shadow:  8px 8px 16px #5365ee,
+        -8px -8px 16px #394de3;}
+}
+@keyframes Brilha4 {
+    0%{box-shadow:  8px 8px 16px #f2950ad2,
+        -8px -8px 16px #ffa60bc1;}
+    100%{box-shadow:  8px 8px 16px #edad4e,
+        -8px -8px 16px #efb24a;}
+}
    @media screen and (min-width: 768px) and  (max-width: 1400px) {
     #botaocomeco {
         width: 35rem; /* Ocupa toda a largura da tela */
@@ -158,6 +192,12 @@ p{
         margin-top: 3.5rem;
         transform: scaleX(-25vh);
         padding: 3rem;
+    }
+
+    .orbita img{
+        transform: translatey(-250%) translateX(-25%);
+        height: 50px;
+        width: auto;
     }
 
     .bola1{
@@ -205,6 +245,12 @@ p{
         transform: scaleX(-25vh);
         padding: 3rem;
      
+    }
+
+    .orbita img{
+        transform: translatey(-400%) translateX(-25%);
+        height: 30px;
+        width: auto;
     }
 
     .bola1{
