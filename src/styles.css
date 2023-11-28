@@ -9,6 +9,22 @@ body{
     overflow-x: hidden;
     transition: background-position .5s ease;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 255, 229);
+  border-radius: 10px;
+}
 
 .meio{
 text-align: center;

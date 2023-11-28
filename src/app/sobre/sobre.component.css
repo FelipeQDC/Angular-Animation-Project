@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 #v1{
-    margin-top: 6rem;
+    margin-top: 12rem;
 }
 
 .VRIDO {
@@ -35,6 +36,8 @@
     columns: auto 40rem;
     text-align: center;
     overflow-y:auto;
+    padding: 2rem;
+    padding-left: 0;
 }
 .VRIDOMINI{
             background: radial-gradient(circle, rgba(0, 254, 216, 0.652) 0%, rgba(0, 246, 254, 0.269) 34%, rgba(0, 213, 255, 0.315) 100%);
@@ -44,9 +47,12 @@
             -webkit-backdrop-filter: blur(2.7px);
             border: 1px solid rgba(0, 254, 216, 0.23);
             padding: 0;
+            padding-top: min(4rem, 10%);
+            padding-bottom: min(4rem, 10%);
             padding-right: min(15rem, 10%);
             padding-left: min(15rem, 10%);
-            margin: 2rem 1rem 3rem 1rem;
+            max-height: 15rem;
+            margin: auto 1rem auto 1rem;
             font-weight: 900;
             font-size: 1.7rem;
             font-family: 'Work Sans', sans-serif;
@@ -74,6 +80,7 @@
         columns: auto 20rem;
         text-align: center;
         text-overflow: clip;
+        padding: 0;
     }
     .VRIDOMINI{
         text-wrap: balance;
