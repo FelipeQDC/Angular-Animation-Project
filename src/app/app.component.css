@@ -88,9 +88,9 @@ p{
     height: 3rem;
     user-select: none;
     border-radius: 50%;
-    background: linear-gradient(145deg, #ee1313aa, #c81010b6);
-    box-shadow:  8px 8px 16px #d31111cf,
-                 -8px -8px 16px #e91313dc;
+    background: linear-gradient(145deg, #ff2626aa, #ef1c1cb6);
+    box-shadow:  8px 8px 16px #ff1c1ccf,
+                 -8px -8px 16px #fc3a3adc;
     
     animation: flutuar 3.2s ease-in-out infinite alternate, Brilha1 2s ease-in-out infinite alternate;
     cursor: pointer;
@@ -152,12 +152,13 @@ p{
     margin-left: auto;
     margin-right: auto;
     transform: translatey(-60%) translateX(-10%);
+    transition: 0.3s ease-in-out;
 }
-@media screen and (min-width: 1400px) {
+
 .orbita img:hover{
-    animation: girar 0.5s ease;
+    transform: scale(1.2) translatey(-50%) translateX(-10%);
 }
-}
+
 .SobreH1{  position: relative;
 left: 50%;
 right: 0;
@@ -215,10 +216,6 @@ text-decoration: underline #03eeffb6 10px;
     }
   }
 
-@keyframes girar{
-    70%{   transform: rotateY( 180deg ) translatey(-60%) translateX(10%)}
-    100%{  transform: rotateY( 360deg ) translatey(-60%) translateX(-10%)}
-}
 
 @keyframes flutuar{
     0%{ transform: translatey(0px);}
@@ -231,8 +228,8 @@ text-decoration: underline #03eeffb6 10px;
   }
 @keyframes Brilha1 {
     0%{ 
-        box-shadow:  8px 8px 16px #d31111af,
-                     -8px -8px 16px #e91313b9;}
+        box-shadow:  8px 8px 16px #ff1c1ccf,
+        -8px -8px 16px #fc3a3adc}
     100%{ 
         box-shadow:  8px 8px 16px #d71f1ff7,
                      -8px -8px 16px #d82e2efd;}
@@ -319,6 +316,7 @@ text-decoration: underline #03eeffb6 10px;
 
     .SobreH1 h1{
         font-size: 5.4rem;
+        font-weight: 100;
     }
 
     .orbita img{
