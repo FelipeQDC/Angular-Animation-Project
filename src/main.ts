@@ -28,8 +28,8 @@ function handleScrolledPosition(event: any) {
   } else if (scroll >= 600 && scroll < 1200) {
     document.body.style.setProperty("--Meio", "#0473c3");
     document.body.style.setProperty("--gradientStop", "#0473c3");
-  } else if (scroll >= 1300) {
-  } else if (scroll >= 1200 && scroll < 1300) {
+  }
+  else if (scroll >= 1200 && scroll < 1300) {
     document.body.style.setProperty("--gradientStop", "#0362a7");
   } else if (scroll >= 1300) {
     document.body.style.setProperty("--gradientStop", "#03528b");

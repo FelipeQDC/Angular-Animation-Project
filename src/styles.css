@@ -7,7 +7,7 @@ body{
     height: 100%;
     max-width: 100%;
     overflow-x: hidden;
-    transition: background-position .5s ease;
+    transition:  0.5s ease-in;
 }
 /* width */
 ::-webkit-scrollbar {
