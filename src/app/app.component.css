@@ -16,7 +16,7 @@
     box-shadow:  20px 20px 60px #4eafcf,
     -20px -20px 60px #6aedff;
 
-    transition: all .3s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 .noClick{
     user-select: none;
