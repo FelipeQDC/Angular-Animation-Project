@@ -267,6 +267,10 @@ text-decoration: underline #03eeffb6 10px;
         width: auto;
     }
 
+    .orbita img:hover{
+        transform: scale(1.2) translatey(-240%) translateX(-25%);
+    }
+
     .bola1{
         height: 1.5rem;
         width: 1.5rem;
@@ -327,7 +331,9 @@ text-decoration: underline #03eeffb6 10px;
         height: 30px;
         width: auto;
     }
-
+    .orbita img:hover{
+        transform: scale(1.2) translatey(-390%) translateX(-25%);
+    }
     .bola1{
         height: 1rem;
         width: 1rem;
