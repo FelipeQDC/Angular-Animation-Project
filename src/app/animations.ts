@@ -28,23 +28,24 @@ export const myInsertRemoveTrigger =
 
 trigger('myInsertRemoveTrigger', [
   transition(':enter', [
-    style({ opacity: '0', display:'none' ,transform: "translateX(-100%)",height: '0px' }),
+    style({ opacity: '0' ,transform: "translateX(-100%)",height: '0px' }),
     animate('1230ms ease-in-out', 
             style({ 
             transform: 'translateX(0)',
             opacity: '1',
-            display:'block'  }))
+              }))
   ]),
   transition(':leave', [
-    style({ opacity: 1, display:'block',transform: "translateX(0)",height: '0px' }),
+    style({ opacity: 1, transform: "translateX(0)",height: '0px' }),
     animate('550ms ease-in-out', 
-            style({  display:'none',
+            style({
             transform: 'translateX(900px)',
             opacity: '0',
              }))
   ])
 ]);
-    
+//display:'block'
+//display:'none' 
 export const Cor =
   
   trigger('Cor', [

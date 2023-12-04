@@ -148,7 +148,6 @@ p{
 .orbita img{
     height: 64px;
     width: auto;
-    display: block;
     margin-left: auto;
     margin-right: auto;
     transform: translatey(-60%) translateX(-10%);
