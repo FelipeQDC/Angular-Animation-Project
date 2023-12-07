@@ -1,13 +1,60 @@
    .grid{
+    margin: 10rem 0 0 0;
     display: grid; 
 
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr;
     
-    grid-column-gap: 20px;
-    height: 100%;
-    margin-left: 30em;
+    gap: 3px;
+    height: 100vw;
+    margin-left: 15em;
+    transition: 800ms ease-in-out;
     }
+    .grid div{
+      padding:0 4rem;
+      transition: 800ms ease-in-out;
+      min-width: 6rem;
+    }
+    .grid div{
+      min-width: none;
+    }
+    div:hover > button{
+      max-width: 100%;
+      min-width: 140px;
+      opacity: 1;
+    }
+    div:hover > .titulo{
+      opacity: 0;
+      width: none;
+    }
+    .titulo{
+      transition: 800ms ease-in-out;
+    }
+    #item-0:hover, #item-1:hover, #item-2:hover, #item-3:hover{
+      background: crimson;
+      transition: 800ms ease-in-out;
+    }
+    
+    .grid:has(#item-0:hover) {
+      grid-template-columns:  1.5fr 1fr 1fr 1fr;
+      transition: 800ms 
+    }
+
+    .grid:has(#item-1:hover) {
+      grid-template-columns:  1fr 1.5fr 1fr 1fr;
+      transition: 800ms ease-in-out;
+    }
+
+    .grid:has(#item-2:hover) {
+      grid-template-columns:  1fr 1fr 1.5fr 1fr;
+      transition: 800ms ease-in-out;
+    }
+
+    .grid:has(#item-3:hover) {
+      grid-template-columns:   1fr 1fr 1fr 1.5fr;
+      transition: 800ms ease-in-out;
+    }
+
     .botão {
       align-items: center;
       background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
@@ -21,8 +68,6 @@
       font-size: 20px;
       justify-content: center;
       line-height: 1em;
-      max-width: 100%;
-      min-width: 140px;
       padding: 19px 24px;
       text-decoration: none;
       user-select: none;
@@ -30,6 +75,8 @@
       touch-action: manipulation;
       white-space: nowrap;
       cursor: pointer;
+      transition: 800ms ease-in-out;
+      opacity: 0;
     }
     
     .botão:active,
@@ -46,40 +93,18 @@
     #item-0 {
 
         background-color: #7575FD; 
-        grid-row-start: 1;
-        grid-column-start: 4;
-     
-        grid-row-end: 4;
-        grid-column-end: 5;
-        
+        transition: 800ms ease-in-out;
      }
      #item-1 {
-     
         background-color: #7E999D; 
-        grid-row-start: 1;
-        grid-column-start: 3;
-     
-        grid-row-end: 4;
-        grid-column-end: 4;
-        
+        transition: 800ms ease-in-out;
      }
-     #item-2 {
-     
+     #item-2 {    
         background-color: #8F7677; 
-        grid-row-start: 1;
-        grid-column-start: 2;
-     
-        grid-row-end: 4;
-        grid-column-end: 3;
-        
+        transition: 800ms ease-in-out;
      }
      #item-3 {
-     
-        background-color: #8F59B9; 
-        grid-row-start: 1;
-        grid-column-start: 1;
-     
-        grid-row-end: 4;
-        grid-column-end: 2;
+      transition: 800ms ease-in-out;
+      background-color: #8F59B9; 
         
      }
