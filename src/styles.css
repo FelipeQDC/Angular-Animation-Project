@@ -228,7 +228,7 @@ z-index: 1001;
 	-webkit-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
-
+  user-select: none;
 	height: 120px;
 	position: relative;
 	width: 350px;
