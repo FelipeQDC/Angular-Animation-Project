@@ -267,7 +267,7 @@ p{
         width: auto;
     }
     .orbita img:hover{
-        transform: scale(1.2) translatey(-390%) translateX(-25%);
+        transform: scale(1.2) translatey(-330%) translateX(-25%);
     }
     .bola1{
         height: 1rem;

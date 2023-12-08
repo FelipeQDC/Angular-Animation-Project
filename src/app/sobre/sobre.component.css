@@ -24,6 +24,7 @@
     transition: 400ms, scale 200ms;
     max-height: fit-content;
     margin-left: 22em;
+    min-width:450px ;
 }
 .VRIDO:hover{
     rotate: y 10deg;
@@ -38,7 +39,7 @@
     text-align: center;
     overflow-y:auto;
     padding: 2rem;
-    padding-left: 0;
+    
 }
 .VRIDOMINI{
             background: radial-gradient(circle, rgba(0, 254, 216, 0.652) 0%, rgba(0, 246, 254, 0.269) 34%, rgba(0, 213, 255, 0.315) 100%);
@@ -129,6 +130,7 @@
         margin-right: 2em;
         padding: 1rem;
         margin-left: 2em;
+        min-width:0 ;
     }
 
     
