@@ -28,9 +28,10 @@ export const myInsertRemoveTrigger =
 
 trigger('myInsertRemoveTrigger', [
   transition(':enter', [
-    style({ opacity: '0' ,transform: "translateX(-100%)",height: '0px' }),
+    style({ opacity: '0' ,transform: "translateX(-100%)",height: '0px',display:'none'  }),
     animate('1230ms ease-in-out', 
             style({ 
+              display:'block',
             transform: 'translateX(0)',
             opacity: '1',
               }))
@@ -41,6 +42,7 @@ trigger('myInsertRemoveTrigger', [
             style({
             transform: 'translateX(900px)',
             opacity: '0',
+            display:'none' 
              }))
   ])
 ]);

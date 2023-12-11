@@ -33,7 +33,7 @@
     }
     div:hover > #Bloco{
       opacity: 1;
-      margin-left: 4rem;
+      margin-left: 25%;
     }
     .titulo{
       transition: 800ms ease-in-out;
@@ -41,6 +41,7 @@
       font-size: 3rem;
     }
     #Bloco{
+      position: absolute;
       margin-top: 1em;
       height: 70px;
       width: 70px;
@@ -106,12 +107,6 @@
       outline: 0;
     }
     
-    @media (min-width: 768px) {
-      .botão {
-        font-size: 24px;
-        min-width: 196px;
-      }
-    }
     #item-0 {
 
       background: rgba(43, 202, 185, 0.52);
@@ -150,7 +145,35 @@
       border: 1px solid rgba(24, 88, 119, 0.36);
         
      }
-
+     .Pula{
+      animation: Pula 1s infinite  ease-in-out alternate both;
+     }
 @keyframes Pula{
-  
+  0% {
+    border-radius: 50%;
+    top: 25%;
+    transform:scaleY(100%);
+  }
+  50% {
+    border-radius: 50%;
+    top: 75%;
+    transform:scaleY(65%);
+  }
+  100%{
+    border-radius: 50%;
+    top: 50%;
+    transform:scaleY(100%);
+  }
 }
+
+@media screen and (max-width: 768px) {
+  div:hover > #Bloco{
+    opacity: 1;
+    margin-left: 15%;
+  }
+  .botão {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+

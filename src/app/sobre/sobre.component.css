@@ -62,11 +62,13 @@
             align-items: center;
             text-shadow: 0 2px 0 #4eafcf;
 }
-.SobreH1{  position: relative;
+.SobreH1{  
+    position: relative;
     left: 50%;
     right: 0;
     text-align: center;
     transform: translateY(-110px);
+    margin: 0;
     }
     .SobreH1 h1{
     padding-top: 3%;
