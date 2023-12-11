@@ -1,14 +1,14 @@
 <div class="grid">
-    <div id="item-0" class="first" (mouseleave)="ativado1 = 'nao'"><p class="titulo">Exemplo1</p><button class="botão" (click)="ClassBola1()"><p>Aperte</p></button>
-    <div id="Bloco" [ngClass]="ativado1 === 'sim' ? 'Pula' : 'inactive'"></div>    
+    <div id="item-0" class="first" (mouseleave)="ativado1 = '0'"><p class="titulo">Exemplo 1</p><button class="botão" (click)="ClassBola1()"><p>Aperte</p></button>
+    <div id="Circulo" [ngClass]="ativado1 === '1' ? 'Pula' : 'inactive'"></div>    
     </div>
-    <div id="item-1"><p class="titulo">Exemplo2</p><button class="botão"><p>Aperte</p></button>
-    <div id="Bloco" class="2"></div>
+    <div id="item-1" (mouseleave)="ativado1 = '0'"><p class="titulo">Exemplo 2</p><button class="botão" (click)="ClassBola2()"><p>Aperte</p></button>
+    <div id="Circulo" [ngClass]="ativado1 === '2' ? 'Gira' : 'inactive'"></div>
     </div>
-    <div id="item-2"><p class="titulo">Exemplo3</p><button class="botão"><p>Aperte</p></button>
-    <div id="Bloco" class="3"></div>
+    <div id="item-2" (mouseleave)="ativado1 = '0'"><p class="titulo">Exemplo 3</p><button class="botão" (click)="ClassBola3()"><p>Aperte</p></button>
+    <div id="Circulo"[ngClass]="ativado1 === '3' ? 'Voando' : 'inactive'"></div>
     </div>
-    <div id="item-3" class="last"><p class="titulo">Exemplo4</p><button class="botão"><p>Aperte</p></button>
-    <div id="Bloco" class="4"></div>
+    <div id="item-3" class="last" (mouseleave)="ativado1 = '0'"><p class="titulo">Exemplo 4</p><button class="botão" (click)="ClassBola4()"><p>Aperte</p></button>
+    <div id="Circulo" class="4"></div>
     </div>
 </div>
