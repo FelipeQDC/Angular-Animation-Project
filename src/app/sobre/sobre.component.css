@@ -131,7 +131,9 @@
         display: block;
         padding: 1rem;
         min-width:0 ;
-        margin-left: calc(100vw - 95vw);
+        margin-right: 0px;
+        margin-left: calc(100vw - 98vw);
+        margin-right: calc(100vw - 98vw);
     }
 
     
@@ -139,7 +141,7 @@
         font-size: 5.4rem;
     }
     .SobreH1{
-        left: 30%;
+        left: 50%;
     }
     .VRIDO p{
         font-size: 4vw;
