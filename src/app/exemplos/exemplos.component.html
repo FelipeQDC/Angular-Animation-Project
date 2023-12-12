@@ -9,6 +9,6 @@
     <div id="Circulo"[ngClass]="ativado1 === '3' ? 'Voando' : 'inactive'"></div>
     </div>
     <div id="item-3" class="last" (mouseleave)="ativado1 = '0'"><p class="titulo">Exemplo 4</p><button class="botão" (click)="ClassBola4()"><p>Aperte</p></button>
-    <div id="Circulo" class="4"></div>
+    <div id="Circulo" [ngClass]="ativado1 === '4' ? 'formas' : 'inactive'"></div>
     </div>
 </div>
