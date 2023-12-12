@@ -129,15 +129,17 @@
 @media screen and (max-width: 768px) {
     .VRIDO{
         display: block;
-        margin-right: 2em;
         padding: 1rem;
-        margin-left: 2em;
         min-width:0 ;
+        margin-left: calc(100vw - 95vw);
     }
 
     
     .SobreH1 h1{
         font-size: 5.4rem;
+    }
+    .SobreH1{
+        left: 30%;
     }
     .VRIDO p{
         font-size: 4vw;
