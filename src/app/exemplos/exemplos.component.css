@@ -51,10 +51,15 @@
       opacity: 0;
       transition: 1000ms ease-in-out;
       user-select: none;
+      background: linear-gradient(145deg, #3aa8fd, #318dd4);
+      box-shadow:  29px 29px 58px #69273a,
+                   -29px -29px 58px #ff6d96;
     }
 
     #item-0:hover, #item-1:hover, #item-2:hover, #item-3:hover{
-      background: crimson;
+      background: #dc143c;
+      box-shadow: inset 31px 31px 61px #580818,
+                  inset -31px -31px 61px #ff2060;
       transition: 800ms ease-in-out;
     }
     
