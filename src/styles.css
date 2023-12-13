@@ -132,29 +132,40 @@ z-index: 1001;
 
   @-webkit-keyframes animateCloud {
     0% {
-        margin-left: -100vw;
+        margin-left: -1000px;
     }
     100% {
-        margin-left: 100vw;
+        margin-left: 100%;
     }
 }
 
 @-moz-keyframes animateCloud {
     0% {
-        margin-left: -100vw;
+        margin-left: -1000px;
     }
     100% {
-        margin-left: 100vw;
+        margin-left: 100%;
     }
 }
 
 @keyframes animateCloud {
     0% {
-        margin-left: -100vw;
+        margin-left: -1000px;
     }
     100% {
-        margin-left: 100vw;
+        margin-left: 100%;
     }
+}
+
+@keyframes animateCloud2 {
+  0% {
+      opacity: 0;
+      margin-left:30%;
+  }
+  100% {
+    opacity: 1;
+      margin-left: -100%;
+  }
 }
 
 /* ANIMATIONS */
@@ -214,11 +225,12 @@ z-index: 1001;
 .cloud {
 	background: #fff;
 	background: -moz-linear-gradient(top,  #fff 5%, #f1f1f1 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#fff), color-stop(100%,#f1f1f1));
 	background: -webkit-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
 	background: -o-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
 	background: -ms-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
 	background: linear-gradient(top,  #fff 5%,#f1f1f1 100%);
-	
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#f1f1f1',GradientType=0 );
 	
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
@@ -261,12 +273,50 @@ z-index: 1001;
 	right: 50px;
 	top: -90px;
 }
-
 @media screen and (max-width: 768px) {
-  html,body{
-    overflow-x: hidden;
+
+  .x1 {
+    animation: animateCloud2 35s linear infinite;
+    
+    -webkit-transform: scale(0.65);
+    -moz-transform: scale(0.65);
+    transform: scale(0.65);
   }
-  body{
-    width: 100vw; overflow-x: hidden;
+  
+  .x2 {
+
+    animation: animateCloud2 20s linear infinite;
+    
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    transform: scale(0.3);
+  }
+  
+  .x3 {
+
+    animation: animateCloud2 30s linear infinite;
+    
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  
+  .x4 {
+
+    animation: animateCloud2 18s linear infinite;
+    
+    -webkit-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    transform: scale(0.4);
+  }
+  
+  .x5 {
+  
+  
+    animation: animateCloud2 25s linear infinite;
+    
+    -webkit-transform: scale(0.55);
+    -moz-transform: scale(0.55);
+    transform: scale(0.55);
   }
 }
