@@ -113,6 +113,7 @@
     transition: 1s ease-in-out;
     transition-delay: 0s;
     margin-left: 5px;
+      min-width: 11rem;
     }
     div:hover>.a{
       opacity: 1;

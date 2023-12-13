@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
 })
 export class ExemplosComponent {
   ativado1 = '0';
-
+  texto = 'Copiar código';
 
 ClassBola1(){
   if(this.ativado1!= '1'){
@@ -42,6 +42,7 @@ ClassBola4(){
 }
 
 CopiarTexto1(){
+  const texto = document.getElementsByClassName('1');
   navigator.clipboard.writeText("@keyframes Pula{ 0% { top: 25%; transform:scaleY(100%); } 50% { top: 75%; transform:scaleY(65%); } 100%{ top: 50%; transform:scaleY(100%); } }");
 }
 CopiarTexto2(){

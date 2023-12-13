@@ -1,22 +1,22 @@
 <div class="grid">
-    <div id="item-0" class="first" (mouseleave)="ativado1 = '0'"><p class="titulo">Exemplo 1</p>
+    <div id="item-0" class="first" (mouseleave)="ativado1 = '0'; texto = 'Copiar código'"><p class="titulo">Exemplo 1</p>
         <button class="botão" (click)="ClassBola1()"><p>Aperte</p></button>
-        <button class="botão a" (click)="CopiarTexto1()"><p>Copiar codigo</p></button>
+        <button class="botão a" (click)="CopiarTexto1(); texto = 'Copiado!'"><p>{{texto}}</p></button>
     <div id="Circulo" [ngClass]="ativado1 === '1' ? 'Pula' : 'inactive'"></div>    
     </div>
-    <div id="item-1" (mouseleave)="ativado1 = '0'"><p class="titulo">Exemplo 2</p>
+    <div id="item-1" (mouseleave)="ativado1 = '0'; texto = 'Copiar código'"><p class="titulo">Exemplo 2</p>
         <button class="botão" (click)="ClassBola2()"><p>Aperte</p></button>
-        <button class="botão a" (click)="CopiarTexto2()"><p>Copiar codigo</p></button>
+        <button class="botão a" (click)="CopiarTexto2(); texto = 'Copiado!'"><p>{{texto}}</p></button>
     <div id="Circulo" [ngClass]="ativado1 === '2' ? 'Gira' : 'inactive'"></div>
     </div>
-    <div id="item-2" (mouseleave)="ativado1 = '0'"><p class="titulo">Exemplo 3</p>
+    <div id="item-2" (mouseleave)="ativado1 = '0'; texto = 'Copiar código'"><p class="titulo">Exemplo 3</p>
         <button class="botão" (click)="ClassBola3()"><p>Aperte</p></button>
-        <button class="botão a" (click)="CopiarTexto3()"><p>Copiar codigo</p></button>
+        <button class="botão a" (click)="CopiarTexto3(); texto = 'Copiado!'"><p>{{texto}}</p></button>
     <div id="Circulo"[ngClass]="ativado1 === '3' ? 'Voando' : 'inactive'"></div>
     </div>
-    <div id="item-3" class="last" (mouseleave)="ativado1 = '0'"><p class="titulo">Exemplo 4</p>
+    <div id="item-3" class="last" (mouseleave)="ativado1 = '0'; texto = 'Copiar código'"><p class="titulo">Exemplo 4</p>
         <button class="botão" (click)="ClassBola4()"><p>Aperte</p></button>
-        <button class="botão a" (click)="CopiarTexto4()"><p>Copiar codigo</p></button>
+        <button class="botão a" (click)="CopiarTexto4(); texto = 'Copiado!'"><p>{{texto}}</p></button>
     <div id="Circulo" [ngClass]="ativado1 === '4' ? 'formas' : 'inactive'"></div>
     </div>
 </div>
