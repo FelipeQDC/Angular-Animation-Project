@@ -14,7 +14,7 @@
     transition: 800ms ease-in-out;
     }
     .grid div{
-      padding:0 4rem;
+      padding:0;
       transition: 800ms ease-in-out;
       min-width: none;
     }
@@ -24,7 +24,7 @@
     .last{
       border-radius: 0 5% 5% 0;
     }
-    div:hover > button{
+    div:hover > button:not(.a){
       opacity: 1;
     }
     div:hover > .titulo{
@@ -53,6 +53,7 @@
       background: linear-gradient(145deg, #3aa8fd, #318dd4);
       box-shadow:  29px 29px 58px #69273a,
                    -29px -29px 58px #ff6d96;
+                   left: 16%;
     }
 
     #item-0:hover, #item-1:hover, #item-2:hover, #item-3:hover{
@@ -90,7 +91,7 @@
       box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
       box-sizing: border-box;
       color: #FFFFFF;
-      display: flex;
+      display: inline-flex;
       font-family:  'Kanit', sans-serif;
       font-size: 20px;
       justify-content: center;
@@ -107,7 +108,16 @@
       max-width: 100%;
       min-width: 140px;
     }
-    
+    .a{
+    float: center;
+    transition: 1s ease-in-out;
+    transition-delay: 0s;
+    margin-left: 5px;
+    }
+    div:hover>.a{
+      opacity: 1;
+      transition-delay: 2s;
+    }
     .botão:active,
     .botão:hover {
 
@@ -164,7 +174,7 @@
      }
      .Voando{
       top: 50%;
-      animation: slide-out-elliptic-top-bck 3s ease-in-out both infinite;
+      animation: Slide 3s ease-in-out both infinite;
      }
      #item-3:hover>#Circulo{
       top: 50%;
@@ -247,7 +257,7 @@
 }
 
 
-@keyframes slide-out-elliptic-top-bck {
+@keyframes Slide {
   0% {
     -webkit-transform: translateY(0) rotateX(0) scale(1);
             transform: translateY(0) rotateX(0) scale(1);
@@ -263,8 +273,8 @@
     opacity: 1;
   }
   50%{
-    -webkit-transform: translateY(450px) rotateX(30deg) scale(0);
-    transform: translateY(450px) rotateX(30deg) scale(0);
+    -webkit-transform: translateY(400px) rotateX(30deg) scale(0);
+    transform: translateY(400px) rotateX(30deg) scale(0);
 -webkit-transform-origin: 50% 100%;
     transform-origin: 50% 100%;
 opacity: 0;
@@ -286,10 +296,22 @@ opacity: 0;
   .botão {
     font-size: 24px;
     min-width: 196px;
+    display: block;
+  }
+  .a{
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  #Circulo{
+  top: 30%;
+  left: 20%;
   }
   .grid{
     display: block;
     margin-left: calc(100vw - 90vw);
+  }
+  .grid div{
+    padding: 0 4rem;
   }
   #item-0 {
     min-height: calc(100vh - 20vh);

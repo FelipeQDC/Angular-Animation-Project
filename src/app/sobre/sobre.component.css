@@ -138,10 +138,10 @@
 
     
     .SobreH1 h1{
-        font-size: 5.4rem;
+        font-size: 4.4rem;
     }
     .SobreH1{
-        left: 50%;
+       position: fixed;
     }
     .VRIDO p{
         font-size: 4vw;
