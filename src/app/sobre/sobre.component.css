@@ -141,7 +141,8 @@
         font-size: 4.4rem;
     }
     .SobreH1{
-       position: fixed;
+       position: absolute;
+   
     }
     .VRIDO p{
         font-size: 4vw;
