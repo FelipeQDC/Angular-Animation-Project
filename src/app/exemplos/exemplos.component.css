@@ -313,6 +313,7 @@ opacity: 0;
   }
   .grid div{
     padding: 0 4rem;
+    border-radius: 5% 5% 5% 5%;
   }
   #item-0 {
     min-height: calc(100vh - 20vh);

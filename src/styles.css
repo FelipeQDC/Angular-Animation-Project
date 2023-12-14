@@ -149,12 +149,12 @@ z-index: 1001;
 }
 
 @keyframes animateCloud {
-    0% {
-        margin-left: -1000px;
-    }
-    100% {
-        margin-left: 100%;
-    }
+  0% {
+    margin-left: -1000px;
+}
+100% {
+    margin-left: 100%;
+}
 }
 
 @keyframes animateCloud2 {
@@ -173,7 +173,7 @@ z-index: 1001;
 .x1 {
 	-webkit-animation: animateCloud 35s linear infinite;
 	-moz-animation: animateCloud 35s linear infinite;
-	animation: animateCloud 35s linear infinite;
+	animation: animateCloud 45s linear infinite;
 	
 	-webkit-transform: scale(0.65);
 	-moz-transform: scale(0.65);
@@ -183,7 +183,7 @@ z-index: 1001;
 .x2 {
 	-webkit-animation: animateCloud 20s linear infinite;
 	-moz-animation: animateCloud 20s linear infinite;
-	animation: animateCloud 20s linear infinite;
+	animation: animateCloud 27s linear infinite;
 	
 	-webkit-transform: scale(0.3);
 	-moz-transform: scale(0.3);
@@ -193,7 +193,7 @@ z-index: 1001;
 .x3 {
 	-webkit-animation: animateCloud 30s linear infinite;
 	-moz-animation: animateCloud 30s linear infinite;
-	animation: animateCloud 30s linear infinite;
+	animation: animateCloud 38s linear infinite;
 	
 	-webkit-transform: scale(0.5);
 	-moz-transform: scale(0.5);
@@ -213,7 +213,7 @@ z-index: 1001;
 .x5 {
 	-webkit-animation: animateCloud 25s linear infinite;
 	-moz-animation: animateCloud 25s linear infinite;
-	animation: animateCloud 25s linear infinite;
+	animation: animateCloud 30s linear infinite;
 	
 	-webkit-transform: scale(0.55);
 	-moz-transform: scale(0.55);
