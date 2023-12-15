@@ -6,6 +6,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { ExemplosComponent } from './exemplos/exemplos.component';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { FeedbackComponent } from './feedback/feedback.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     BrowserAnimationsModule
   ],
   providers: [],

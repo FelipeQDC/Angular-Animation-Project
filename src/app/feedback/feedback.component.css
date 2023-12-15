@@ -1,7 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:wght@300&display=swap');
+.Header{
+    margin: 10rem 0 0 0;
+    font-weight: 900;
+    font-size: 2rem;
+    font-family: 'Bebas Neue', sans-serif;
+    text-shadow: 2px 0px 0 #6a283b;
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #f3ec78, #dd577d);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    display: inline-flex;
+    user-select: none;
+}
 
 #Comentario{
-    margin: 10rem 0 0 0;
+    margin: 0;
     height: calc(100vh - 40vh);
     margin-left: calc(100vw - 85vw);
     display: grid;
@@ -24,6 +41,7 @@
     user-select: none;
     align-items: center;
     justify-content: center;
+    border-radius: 4px;
 }
 .Emote>div{
 width: 70%;
@@ -48,9 +66,14 @@ transform: scale(1.5);
 .Paragrafo>h1, p{
     padding: 1rem;
     font-family: 'Work Sans', sans-serif;
-    font-size: 1rem;
     font-weight: 900;
     text-shadow: 0 2px 0 #a33f29;
+}
+.Paragrafo>p{
+    font-size: 1rem;
+}
+.Paragrafo>h1{
+    font-size: 2rem;
 }
 #Comentario>.Feedback{
     grid-area: main;

@@ -19,6 +19,8 @@
     "@angular/platform-browser": "^15.2.0",
     "@angular/platform-browser-dynamic": "^15.2.0",
     "@angular/router": "^15.2.0",
+    "@types/nodemailer": "^6.4.14",
+    "nodemailer": "^6.9.7",
     "rxjs": "~7.8.0",
     "save": "^2.9.0",
     "tslib": "^2.3.0",

@@ -1,14 +1,14 @@
 <head>
      
 </head>
-
+<div class="Header"><h1>Como se sentiu utilizando este site? : {{Sentimento}}</h1></div>
 <div id="Comentario">
 <div class="Emote">
-    <div><p>😭</p></div>
-    <div><p>😞</p></div>
-    <div><p>😐</p></div>
-    <div><p>😀</p></div>
-    <div><p>😁</p></div>
+    <div><p (click)="Setsentimento(' Triste')">😭</p></div>
+    <div><p (click)="Setsentimento(' Desapontado')">😞</p></div>
+    <div><p (click)="Setsentimento(' Indiferente')">😐</p></div>
+    <div><p (click)="Setsentimento(' Feliz')">😀</p></div>
+    <div><p (click)="Setsentimento(' Satisfeito')">😁</p></div>
 </div>
 <div class="Paragrafo">
     <h1>Seu Feedback é Valioso para Mim!</h1>
@@ -18,10 +18,8 @@
     <p>Por favor, reserve um momento para compartilhar suas impressões sobre o projeto. Seu feedback me proporciona insights valiosos sobre o que está funcionando bem e como posso melhorar ainda mais.</p>
 </div>
 <div class="Feedback"> 
-     <textarea id="w3review" name="w3review" rows="4" cols="50">
-  Escreva aqui, sua experiência com este site.
-</textarea>
+     <textarea id="w3review" name="w3review" rows="4" cols="50" #Feedback placeholder="Escreva aqui, sua experiência com este site."></textarea>
 </div>
 <div class="btn1"></div>
-<div class="btn2"></div>
+<div class="btn2"><button (click)="enviarEmail(Feedback.value)">Aperte</button></div>
 </div>
