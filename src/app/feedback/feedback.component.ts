@@ -19,7 +19,6 @@ constructor(private http:HttpClient){
 }
 
 enviarEmail(texto: string) {
-
   const dadosParaEnviar = "Sentimento: "+ this.Sentimento + ", FeedBack:"+ texto;
   const Feedback = { texto: dadosParaEnviar };
 
