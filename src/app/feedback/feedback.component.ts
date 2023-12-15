@@ -21,15 +21,20 @@ constructor(private http:HttpClient){
 }
 
 enviarEmail(texto: string) {
+
   const dadosParaEnviar = "Sentimento: "+ this.Sentimento + ", FeedBack:"+ texto;
   const Feedback = { texto: dadosParaEnviar };
-
-  this.http.post(this.api, Feedback)
+  
+  if(this.captcha != ''){
+    this.http.post(this.api, Feedback)
     .subscribe(response => {
       console.log('E-mail enviado com sucesso!', response);
     }, error => {
       console.error('Erro ao enviar e-mail:', error);
     });
+  }else{
+    window.alert("Captcha não verificado");
+  }
 }
 
 resolvido(captchaResponse:string){
