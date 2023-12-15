@@ -8,13 +8,14 @@ import { HttpClient } from '@angular/common/http';
 })
 
 export class FeedbackComponent {
+botao = 'Enviar!'
 Sentimento = "";
 api:string;
 Setsentimento(Sentimento:string){
 this.Sentimento = Sentimento;
 }
 constructor(private http:HttpClient){
-  this.api = 'http://localhost:3000/api/enviar-email';
+  this.api = 'https://api-email-99nb.onrender.com/api/enviar-email';
 }
 
 enviarEmail(texto: string) {
