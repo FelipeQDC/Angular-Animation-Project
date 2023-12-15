@@ -8,6 +8,8 @@ import { ExemplosComponent } from './exemplos/exemplos.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { HttpClientModule } from '@angular/common/http'
 
+import { RecaptchaModule } from 'ng-recaptcha';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +21,8 @@ import { HttpClientModule } from '@angular/common/http'
   imports: [
     BrowserModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RecaptchaModule
   ],
   providers: [],
   bootstrap: [AppComponent]

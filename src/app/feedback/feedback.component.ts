@@ -11,11 +11,13 @@ export class FeedbackComponent {
 botao = 'Enviar!'
 Sentimento = "";
 api:string;
+captcha:string;
 Setsentimento(Sentimento:string){
 this.Sentimento = Sentimento;
 }
 constructor(private http:HttpClient){
   this.api = 'https://api-email-99nb.onrender.com/api/enviar-email';
+  this.captcha = '';
 }
 
 enviarEmail(texto: string) {
@@ -28,6 +30,11 @@ enviarEmail(texto: string) {
     }, error => {
       console.error('Erro ao enviar e-mail:', error);
     });
+}
+
+resolvido(captchaResponse:string){
+this.captcha = captchaResponse;
+console.log('Resolvido' + this.captcha);
 }
 
 }

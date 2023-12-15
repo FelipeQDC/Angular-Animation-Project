@@ -120,7 +120,11 @@ backdrop-filter: blur(6.6px);
 -webkit-backdrop-filter: blur(6.6px);
 border: 1px solid rgba(108, 183, 217, 0.14);
     user-select: none;
-   
+    text-align: center;
+}
+
+re-captcha{
+    display: inline-block;
 }
 #Comentario>.btn2{
     grid-area: bt2;
