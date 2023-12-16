@@ -14,7 +14,7 @@
     <div><p (click)="Setsentimento(' Satisfeito')">😁</p></div>
 </div>
 <div class="Paragrafo">
-    <h1>Seu Feedback é Valioso para Mim!</h1>
+    <h1>Seu feedback é valioso para Mim!</h1>
     <p>Agradeço por visitar meu projeto de portfólio web. Sua opinião é incrivelmente valiosa para mim, 
         pois busco aprimorar e destacar meu trabalho de maneira significativa.
     </p>
@@ -24,7 +24,7 @@
      <textarea id="w3review" name="w3review" rows="4" cols="50" #Feedback placeholder="Escreva aqui, sua experiência com este site."></textarea>
 </div>
 <div class="btn1"> 
- <div [hidden]="captcha">
+ <div>
     <re-captcha (resolved)="resolvido($event)" siteKey="6Ldg6DIpAAAAAMEsJdLxlGoO6kKmeDR5uNoNTD0w"></re-captcha>
 </div>
 <div [hidden]="!captcha"></div>
