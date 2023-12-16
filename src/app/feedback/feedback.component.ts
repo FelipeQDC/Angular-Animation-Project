@@ -20,7 +20,7 @@ constructor(private http:HttpClient){
   this.captcha = '';
 }
 
-enviarEmail(texto: any) {
+enviarEmail(texto: string) {
 
   const dadosParaEnviar = "Sentimento: "+ this.Sentimento + ", FeedBack:"+ texto;
   const Feedback = { texto: dadosParaEnviar };
@@ -37,7 +37,7 @@ enviarEmail(texto: any) {
   }
 }
 
-resolvido(captchaResponse:string){
+resolvido(captchaResponse:any){
 this.captcha = captchaResponse;
 console.log('Resolvido' + this.captcha);
 }
