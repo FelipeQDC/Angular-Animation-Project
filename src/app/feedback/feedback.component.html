@@ -24,7 +24,7 @@
      <textarea id="w3review" name="w3review" rows="4" cols="50" #Feedback placeholder="Escreva aqui, sua experiência com este site."></textarea>
 </div>
 <div class="btn1"> 
- <div [hidden]="captcha">
+ <div [hidden]="captcha" data-netlify-recaptcha="true">
     <re-captcha (resolved)="resolvido($event)" siteKey="6Ldg6DIpAAAAAMEsJdLxlGoO6kKmeDR5uNoNTD0w"></re-captcha>
 </div>
 <div [hidden]="!captcha"></div>

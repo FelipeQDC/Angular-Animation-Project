@@ -20,7 +20,7 @@ constructor(private http:HttpClient){
   this.captcha = '';
 }
 
-enviarEmail(texto: string) {
+enviarEmail(texto: any) {
 
   const dadosParaEnviar = "Sentimento: "+ this.Sentimento + ", FeedBack:"+ texto;
   const Feedback = { texto: dadosParaEnviar };
