@@ -169,9 +169,7 @@ border: 1px solid rgba(255, 157, 0, 0.14);
         gap: 0;
         margin-left: calc(100vw - 95vw);
     }
-    #Comentario>div{
-      
-    }
+
     .Emote>div>p{
         font-size: 1rem;
         }
@@ -182,14 +180,14 @@ border: 1px solid rgba(255, 157, 0, 0.14);
     }
     .Paragrafo>p{
         font-size: 0.5rem;
-        padding-top: 1rem;
+        padding-top: 1.5rem;
     }
     .Paragrafo>h1{
         padding-top: 1rem;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .Header{
-        font-size: 0.7rem;
+        font-size: 1rem;
         margin-left: calc(100vw - 90vw);
         margin-top: 4rem;
     }
