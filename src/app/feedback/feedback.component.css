@@ -26,7 +26,7 @@
     "head head head"
     "nav  main main"
     "nav bt1 bt2";
-    grid-template-rows: 150px 1fr 100px;
+    grid-template-rows: 0.5fr 1fr 0.25fr;
     grid-template-columns: 0.5fr 0.5fr 0.3fr;
     width: 100vw;
     max-width:calc(100vw - 30vw);
@@ -63,7 +63,7 @@ transform: scale(1.5);
 
 #Comentario>.Paragrafo{
     grid-area: nav;
-    background: rgba(255, 107, 74, 0.6588235294117647);
+    background: rgba(255, 107, 74, 0.809);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6.6px);
@@ -128,7 +128,7 @@ re-captcha{
 }
 #Comentario>.btn2{
     grid-area: bt2;
-    background: rgba(255, 157, 0, 0.48627450980392156);
+    background: #ff9d007c;
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(6.6px);
@@ -146,4 +146,58 @@ border: 1px solid rgba(255, 157, 0, 0.14);
     font-size: 2rem;
     font-family: 'Work Sans', sans-serif;
     font-weight: 900;
+    border-radius: 16px;
+    transition: 400ms ease-in-out;
 }
+.btn2> button:hover{
+    background: #ff9d00;
+    box-shadow:  34px 34px 69px #b56f00,
+             -34px -34px 69px #ffcb00;
+
+}
+@media screen and (max-width: 768px) {
+    #Comentario{
+        grid-template-areas:
+        "nav nav"
+        "head head"
+        "main main"
+        "bt1 bt1"
+        "bt2  bt2";
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 0.5fr 0.5fr;
+        max-width:calc(100vw - 70vw);
+        gap: 0;
+    }
+    #Comentario>div{
+      
+    }
+    .Emote>div>p{
+        font-size: 1rem;
+        }
+    .Emote>div{
+        width: 10%;
+        margin: 0 1rem 0 1rem;
+        border-radius: 100%;
+    }
+    .Paragrafo>p{
+        font-size: 0.5rem;
+        padding-top: 1rem;
+    }
+    .Paragrafo>h1{
+        padding-top: 1rem;
+        font-size: 1rem;
+    }
+    .Header{
+        font-size: 0.7rem;
+        margin-left: calc(100vw - 90vw);
+        margin-top: 4rem;
+    }
+    re-captcha{
+        transform: scale(0.7);
+        justify-content: center;
+    }
+    .Feedback{
+        margin-left: 0;
+        width: calc(100vw - 20vw);
+    }
+}   
