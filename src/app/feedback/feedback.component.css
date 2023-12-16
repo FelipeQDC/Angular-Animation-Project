@@ -188,7 +188,7 @@ border: 1px solid rgba(255, 157, 0, 0.14);
     }
     .Header{
         font-size: 1rem;
-        margin-left: calc(100vw - 90vw);
+        margin-left: calc(100vw - 98vw);
         margin-top: 4rem;
     }
     re-captcha{
