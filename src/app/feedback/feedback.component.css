@@ -167,6 +167,7 @@ border: 1px solid rgba(255, 157, 0, 0.14);
         grid-template-columns: 0.5fr 0.5fr;
         max-width:calc(100vw - 70vw);
         gap: 0;
+        margin-left: calc(100vw - 95vw);
     }
     #Comentario>div{
       
