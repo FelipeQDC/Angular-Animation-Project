@@ -27,10 +27,11 @@ enviarEmail(texto: string) {
   
   if(this.captcha != ''){
     this.botao = "Enviado!"
+    this.captcha = '';
     this.http.post(this.api, Feedback)
     .subscribe(response => {
       console.log('E-mail enviado com sucesso!', response);
-     
+      
     }, error => {
       console.error('Erro ao enviar e-mail:', error);
     });

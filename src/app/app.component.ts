@@ -18,7 +18,7 @@ export class AppComponent {
   estado = 'Esconder';
   texto = 'Mostrar';
   flutuar = 'nao';
-  select = 1;
+  select =1;
   selectAntigo = 0;
   trocar(){
     this.estado = this.estado === 'Esconder' ? 'Mostrar' : 'Esconder';

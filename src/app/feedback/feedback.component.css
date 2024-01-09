@@ -13,8 +13,9 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
-    display: inline-flex;
+    display:flex;
     user-select: none;
+justify-content: flex-end;
 }
 
 #Comentario{
@@ -70,13 +71,15 @@ transform: scale(1.5);
     -webkit-backdrop-filter: blur(6.6px);
     border: 1px solid rgba(255, 107, 74, 0.14);
     user-select: none;
-   
+    text-align: center;
+    text-wrap: balance;
 }
 .Paragrafo>h1, p{
-    padding: 1rem;
     font-family: 'Work Sans', sans-serif;
     font-weight: 900;
     text-shadow: 0 2px 0 #a33f29;
+    text-align: center;
+    padding: 1rem;
 }
 .Paragrafo>p{
     font-size: 1rem;
@@ -158,33 +161,48 @@ border: 1px solid rgba(255, 157, 0, 0.14);
 @media screen and (max-width: 768px) {
     #Comentario{
         grid-template-areas:
-        "nav nav"
         "head head"
+        "nav nav"
         "main main"
         "bt1 bt1"
         "bt2  bt2";
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 0.5fr 0.5fr;
+        grid-template-rows: 1fr;
+        grid-template-columns: 0.5fr;
         max-width:calc(100vw - 70vw);
         gap: 0;
         margin-left: calc(100vw - 95vw);
     }
 
     .Emote>div>p{
-        font-size: 1rem;
-        }
+        font-size: 2rem;
+      
+    }
     .Emote>div{
         width: 10%;
-        margin: 0 1rem 0 1rem;
+        margin: 0 1rem;
         border-radius: 100%;
+        border-radius: 0;
+        
+    }
+    .Emote{
+        min-height: 6rem;
+        margin: 2rem 0;
     }
     .Paragrafo>p{
-        font-size: 0.5rem;
-        padding-top: 1.5rem;
+        font-size: 1rem;
+        padding-top: 1.2rem;
     }
     .Paragrafo>h1{
         padding-top: 1rem;
         font-size: 1.5rem;
+    }
+    .Paragrafo>h1,
+    p {
+            font-family: 'Work Sans', sans-serif;
+            font-weight: 900;
+            text-shadow: 0 2px 0 #a33f29;
+            text-align: center;
+            padding: 0.4rem;
     }
     .Header{
         font-size: 1rem;
@@ -192,11 +210,48 @@ border: 1px solid rgba(255, 157, 0, 0.14);
         margin-top: 4rem;
     }
     re-captcha{
-        transform: scale(0.7);
+        transform: scale(1.2);
+       margin-left: 10px;
+    }
+    .btn1{
+        background: transparent;
+        border: transparent;
         justify-content: center;
     }
     .Feedback{
-        margin-left: 0;
+        margin: 2rem 0;
         width: calc(100vw - 20vw);
+        min-height: 15rem;
     }
-}   
+    .btn2 {
+            margin: 3rem 0;
+    }
+} 
+
+ @media (-webkit-device-pixel-ratio: 1.25) {
+#Comentario{
+        margin-left: calc(100vw - 78vw);
+}
+.Paragrafo>h1,
+p {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    text-shadow: 0 2px 0 #a33f29;
+    columns: auto 40rem;
+    text-align: center;
+    overflow-y: auto;
+    padding: 0.5rem;
+}
+
+.Paragrafo>p {
+    font-size: 1rem;
+}
+
+.Paragrafo>h1 {
+    font-size: 1.5rem;
+}
+        re-captcha {
+            transform: scale(1);
+            justify-content: center;
+        }
+ }
